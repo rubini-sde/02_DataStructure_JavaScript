@@ -1,0 +1,19 @@
+{
+  "name": "02_datastructure_javascript",
+  "version": "1.0.0",
+  "description": "Data Structure using Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubini-sde/02_DataStructure_JavaScript.git"
+  },
+  "author": "Rubini Dhanasekaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubini-sde/02_DataStructure_JavaScript/issues"
+  },
+  "homepage": "https://github.com/rubini-sde/02_DataStructure_JavaScript#readme"
+}

@@ -13,13 +13,15 @@ Array.prototype.myFilter = function <T>(
   callbackFn: (element: T, index: number, array: Array<T>) => boolean,
   thisArg?: any
 ) {
+  const len = this.length;
   const results: Array<T> = [];
 
-  for (let i = 0; i < this.length; i++) {
+  for (let i = 0; i < len; i++) {
     if (i in this) {
-      const fnResult = callbackFn.call(thisArg, this[i], i, this);
+      const val = this[i];
+      const fnResult = callbackFn.call(thisArg, val, i, this);
       if (fnResult) {
-        results.push(this[i]);
+        results.push(val);
       }
     }
   }

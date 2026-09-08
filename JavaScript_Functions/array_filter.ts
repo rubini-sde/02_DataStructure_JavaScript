@@ -13,6 +13,9 @@ Array.prototype.myFilter = function <T>(
   callbackFn: (element: T, index: number, array: Array<T>) => boolean,
   thisArg?: any
 ) {
+  if (typeof callbackFn !== "function") {
+    throw new TypeError(`${callbackFn} is not a function`);
+  }
   const len = this.length;
   const results: Array<T> = [];
 
